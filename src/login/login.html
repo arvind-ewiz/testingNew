@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+    function clearText(input)
+    {
+       if (input.defaultValue==input.value)
+       input.value = ''
+    }
+    
+    function restoreText(input)
+    {
+    if (input.value=='')
+    input.value = input.defaultValue
+    }
+</script>    
+<title>Login-Page</title>
+</head>
+<body bgcolor="EEEEEE">
+<form action="checklogin.php" method="POST" >
+
+<fieldset style="margin:100 0 0 400;border-color:black;background-color:EEEEEE;position:absolute;">
+<legend style="color:black;font-size:18" >Login Here</legend><br>
+Username <input type="text" name="uname"value="User Name"onfocus="clearText(this)" 
+onblur="restoreText(this)"style="background-color:#eeeeee;color:A3B7E7;"><br><br>
+
+Password <input type="password" name="upass"value="password"onfocus="clearText(this)" 
+onblur="restoreText(this)"style="background-color:#eeeeee;color:A3B7E7;"><br><br>
+
+<input type="submit" value="Login" style="margin:0 0 0 50">
+<a href="registration.php"><strong>Create an Account</strong></a>
+</fieldset>
+</form> 
+</body>
+</html>

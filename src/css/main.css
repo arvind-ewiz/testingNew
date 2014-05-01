@@ -1,0 +1,17 @@
+#fieldset{
+			 margin:100 0 0 400;
+			 border-color:black;
+			 background-color:#eeeeee;
+			 position:absolute;
+}
+#legend{
+			color:black;
+			font-size:18;
+}
+#txt{
+			background-color:#eeeeee;
+			color:A3B7E7;
+}
+#log_submit{
+			 margin:0 0 0 50;
+}
